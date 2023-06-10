@@ -1,0 +1,56 @@
+@use "../abstract/colors";
+header {
+  background: colors.$bg-dark;
+  .nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 0 28px 0;
+    .nav__brand {
+      padding: 27px 0 0 0;
+    }
+    .nav-menu {
+      display: flex;
+      align-items: center;
+      gap: 27px;
+      margin: auto 0;
+      padding: 27px 0 0 0;
+      .nav-menu__item {
+        a {
+          padding: 27px 0 0 0;
+          text-decoration: none;
+          font-family: "Poppins";
+          font-style: normal;
+          font-weight: 500;
+          font-size: 16px;
+          line-height: 24px;
+          color: #ffffff;
+          opacity: 0.6;
+          &:hover {
+            transition: 0.3s;
+            color: #ffffff;
+            border-top: 3px solid #ffa155;
+            opacity: 1;
+          }
+        }
+      }
+      .nav-menu__clone {
+        a {
+          text-decoration: none;
+          font-family: "Poppins";
+          font-style: normal;
+          font-weight: 500;
+          font-size: 16px;
+          line-height: 24px;
+          color: #ffd3af;
+          img {
+            &:hover {
+              transition: 0.7s;
+              transform: translateX(5px);
+            }
+          }
+        }
+      }
+    }
+  }
+}

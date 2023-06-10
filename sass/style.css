@@ -7,4 +7,54 @@
 html,
 body {
   font-family: "Poppins", sans-serif;
+}
+
+header {
+  background: #232536;
+}
+header .nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 0 28px 0;
+}
+header .nav .nav__brand {
+  padding: 27px 0 0 0;
+}
+header .nav .nav-menu {
+  display: flex;
+  align-items: center;
+  gap: 27px;
+  margin: auto 0;
+  padding: 27px 0 0 0;
+}
+header .nav .nav-menu .nav-menu__item a {
+  padding: 27px 0 0 0;
+  text-decoration: none;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #ffffff;
+  opacity: 0.6;
+}
+header .nav .nav-menu .nav-menu__item a:hover {
+  transition: 0.3s;
+  color: #ffffff;
+  border-top: 3px solid #ffa155;
+  opacity: 1;
+}
+header .nav .nav-menu .nav-menu__clone a {
+  text-decoration: none;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #ffd3af;
+}
+header .nav .nav-menu .nav-menu__clone a img:hover {
+  transition: 0.7s;
+  transform: translateX(5px);
 }/*# sourceMappingURL=style.css.map */
