@@ -20,6 +20,12 @@ header .nav {
 }
 header .nav .nav__brand {
   padding: 27px 0 0 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header .nav .nav__brand .hamburger-menu {
+  display: none;
 }
 header .nav .nav-menu {
   display: flex;
@@ -57,4 +63,25 @@ header .nav .nav-menu .nav-menu__clone a {
 header .nav .nav-menu .nav-menu__clone a img:hover {
   transition: 0.7s;
   transform: translateX(5px);
+}
+
+@media only screen and (max-width: 768px) {
+  header .nav {
+    display: block;
+  }
+  header .nav .nav__brand .nav__brand-icons-2 .hamburger-menu {
+    display: block;
+  }
+  header .nav .nav-menu {
+    display: none;
+  }
+  header .nav .nav-menu .nav-menu__item a {
+    padding: 0 0 0 0;
+  }
+  header .nav .nav-menu .nav-menu__item a:hover {
+    border-top: none;
+  }
+  header .nav .close {
+    display: block;
+  }
 }/*# sourceMappingURL=style.css.map */

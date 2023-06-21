@@ -8,6 +8,12 @@ header {
     padding: 0 0 28px 0;
     .nav__brand {
       padding: 27px 0 0 0;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      .hamburger-menu {
+        display: none;
+      }
     }
     .nav-menu {
       display: flex;
@@ -50,6 +56,34 @@ header {
             }
           }
         }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 768px) {
+  header {
+    .nav {
+      display: block;
+      .nav__brand {
+        .nav__brand-icons-2 {
+          .hamburger-menu {
+            display: block;
+          }
+        }
+      }
+      .nav-menu {
+        display: none;
+        .nav-menu__item {
+          a {
+            padding: 0 0 0 0;
+            &:hover {
+              border-top: none;
+            }
+          }
+        }
+      }
+      .close {
+        display: block;
       }
     }
   }
